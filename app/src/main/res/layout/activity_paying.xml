@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PayingActivity">
+
+    <com.fevziomurtekin.payview.Payview
+        android:id="@+id/payview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardAnimationType="vertical"
+        app:cardBgColor="@android:color/holo_blue_light"
+        app:cardCvErrorText="You must enter 3-digit characters"
+        app:cardCvTextSize="14"
+        app:cardExpiredErrorText="Your card has expired. Please enter the usage date correctly."
+        app:cardFgColor="@android:color/white"
+        app:cardMonthErrorText="You must enter 2-digit characters and you'll enter to number the most digit-value is '12'"
+        app:cardMonthTextSize="13"
+        app:cardNameHelperText="Enter to card name. Max 25 characters."
+        app:cardNameTextSize="15"
+        app:cardNoTextSize="14"
+        app:cardNumberHelperText="You must enter your 16-digit card number."
+        app:cardTextColor="@color/black_color"
+        app:cardYearErrorText="You must enter 2-digit characters and you'll enter to number the most digit-value is '99'"
+        app:cardYearTextSize="13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

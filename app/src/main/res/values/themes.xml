@@ -1,0 +1,74 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.ShopAndGo" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorPrimary">@color/colorGrayDark</item>
+        <item name="colorPrimaryDark">@color/black_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white_color</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="material_dialog_background">@color/colorBackground</item>
+        <item name="material_dialog_title_text_color">@color/black_color</item>
+        <item name="material_dialog_message_text_color">@color/black_color</item>
+        <item name="material_dialog_positive_button_color">@color/white_color</item>
+        <item name="material_dialog_positive_button_text_color">@color/colorAccent</item>
+        <item name="material_dialog_negative_button_text_color">@color/black_color</item>
+
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
+
+        <item name="android:textViewStyle">@style/FontBody</item>
+        <item name="buttonStyle">@style/ButtonBorderless</item>
+        <item name="editTextStyle">@style/EditTextRound</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+
+
+        <!--Change the statue bar color-->
+
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:selectableItemBackgroundBorderless">@color/white_color</item>
+        <item name="colorControlHighlight">@color/colorBackground</item>
+    </style>
+
+    <style name="EditTextRound" parent="android:Widget.EditText">
+        <item name="android:editTextStyle">@style/FontBody</item>
+        <item name="android:textColorHint">@color/colorGrey</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:background">@drawable/round_edittext</item>
+        <item name="android:backgroundTint">@color/colorBackground</item>
+        <item name="android:paddingLeft">@dimen/_8sdp</item>
+        <item name="android:paddingRight">@dimen/_8sdp</item>
+        <item name="android:paddingTop">@dimen/_10sdp</item>
+        <item name="android:paddingBottom">@dimen/_10sdp</item>
+    </style>
+
+    <!--Set a default textView style-->
+    <style name="FontBody" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ButtonBorderless" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/FontBody</item>
+    </style>
+
+
+</resources>

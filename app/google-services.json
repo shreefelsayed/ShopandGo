@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "200261064163",
+    "project_id": "shop-and-go-b540d",
+    "storage_bucket": "shop-and-go-b540d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200261064163:android:090be36a4f094f40767cd6",
+        "android_client_info": {
+          "package_name": "com.armjld.shopandgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200261064163-4uu1qcp27bt6ait359lv179gd7apcscr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjstmfdlXDIRw_qh2yfPaVAbFY6dPkM6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200261064163-4uu1qcp27bt6ait359lv179gd7apcscr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MaterialDialog.Title"
+                    android:text="Welcome to Shop and Go"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_marginVertical="@dimen/_12sdp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView"
+                            android:layout_width="@dimen/_76sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:elevation="-10dp"
+                            app:cardCornerRadius="@dimen/_18sdp"
+                            app:cardElevation="-10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imgUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_employee_default" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:src="@color/white_color"
+                            app:layout_constraintEnd_toEndOf="@+id/cardView"
+                            app:layout_constraintTop_toTopOf="@+id/cardView"
+                            app:tint="@color/white_color" />
+
+                        <ImageView
+                            android:id="@+id/imgIndecator"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:src="@drawable/indicator_default"
+                            app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+                            app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+                            app:layout_constraintStart_toStartOf="@+id/circleImageView"
+                            app:layout_constraintTop_toTopOf="@+id/circleImageView"
+                            app:tint="@color/colorGreen" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hello_again"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_20sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-4dp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:drawablePadding="@dimen/_6sdp"
+                            android:textColor="@color/colorGrayDark"
+                            app:drawableStartCompat="@drawable/ic_volt"
+                            app:drawableTint="@color/black_color" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Steps to use the app"
+                    style="@style/MaterialDialog.Title"
+                    android:textAlignment="viewStart"
+                    android:layout_marginStart="-14dp"
+                    android:textSize="@dimen/_18sdp"
+
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_12sdp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/colorBackground"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_6sdp">
+
+                    <LinearLayout
+                        android:id="@+id/btnScan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/_12sdp"
+                            android:text="1 - Scan the QR Code at the gate"
+                            android:textStyle="bold"
+                            app:drawableEndCompat="@drawable/ic_code_scanner_auto_focus_off"
+                            app:drawableTint="@color/black_color" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginVertical="@dimen/_6sdp"
+                        android:background="@color/colorGrey" />
+
+                    <LinearLayout
+                        android:id="@+id/btnProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/_12sdp"
+                            android:text="2 - Pick up your products"
+                            android:textStyle="bold"
+                            app:drawableEndCompat="@drawable/ic_products"
+                            app:drawableTint="@color/black_color" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginVertical="@dimen/_6sdp"
+                        android:background="@color/colorGrey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/_12sdp"
+                            android:text="3 - Head for our check out camera"
+                            android:textStyle="bold"
+                            app:drawableEndCompat="@drawable/baseline_camera_alt_24"
+                            app:drawableTint="@color/black_color" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginVertical="@dimen/_6sdp"
+                        android:background="@color/colorGrey" />
+
+                    <LinearLayout
+                        android:id="@+id/btnCart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/_12sdp"
+                            android:text="4 - Scan the products using our camera"
+                            android:textStyle="bold"
+                            app:drawableEndCompat="@drawable/ic_qr"
+                            app:drawableTint="@color/black_color" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginVertical="@dimen/_6sdp"
+                        android:background="@color/colorGrey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_8sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/_12sdp"
+                            android:text="5 - Check out from the cart page"
+                            android:textStyle="bold"
+                            app:drawableEndCompat="@drawable/ic_check_white_24dp"
+                            app:drawableTint="@color/black_color" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

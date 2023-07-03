@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.SettingsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MaterialDialog.Title"
+                android:text="Settings and Info"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_18sdp"
+                android:layout_marginVertical="@dimen/_12sdp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/app_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_camera_48dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgUser"
+                        app:layout_constraintEnd_toEndOf="@+id/imgUser"
+                        app:layout_constraintStart_toStartOf="@+id/imgUser"
+                        app:layout_constraintTop_toTopOf="@+id/imgUser"
+                        app:tint="@color/white_color" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:maxLines="1"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linAccountSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:text="@string/account_settings"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:text="@string/change_my_name"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linAppSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:text="@string/app_settings"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/tvAboutApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_12sdp"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:text="@string/about_app"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/_14sdp"
+                    app:drawableStartCompat="@drawable/ic_info_outline_white_24dp"
+                    app:drawableTint="@color/colorAccent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/tvRateApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_12sdp"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:text="@string/str_rate"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/_14sdp"
+                    app:drawableStartCompat="@drawable/ic_write_rate"
+                    app:drawableTint="@color/colorAccent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/tvShareApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_12sdp"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:text="@string/share_app"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/_14sdp"
+                    app:drawableStartCompat="@drawable/ic_share"
+                    app:drawableTint="@color/colorAccent" />
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/btn_primary"
+                android:backgroundTint="@color/colorGrayDark"
+                android:text="@string/log_out"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shop And Go</string>
+    <string name="str_press_again">Press back again to exit the app\n</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="google_id">200261064163-i1pp15le50lmpe7ovlu651agcgop2bpg.apps.googleusercontent.com</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="settings">Settings</string>
+    <string name="hello_again">Hello Again 👋</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="change_my_name">Change my name</string>
+    <string name="about_app">About app</string>
+    <string name="str_rate">Rate app</string>
+    <string name="share_app">Share app</string>
+    <string name="log_out">Log out</string>
+    <string name="app_settings">App settings</string>
+    <string name="current_version">Current Version</string>
+    <string name="your_name">Your name</string>
+    <string name="info_changed">Changes Saved</string>
+    <string name="please_wait">Saving ..</string>
+    <string name="image_updated">Your image has been updated</string>
+</resources>
