@@ -17,6 +17,8 @@ public class UsersDao {
         return collectionReference.whereEqualTo("googleId", googleId).get();
     }
     public Task<Void> createUser(GoogleSignInAccount account, String id) {
+        CartDao cartDao = new CartDao();
+        cartDao.createUserCart(id);
         UserData userData = new UserData(id, String.valueOf(account.getPhotoUrl()), account.getGivenName() + " " + account.getFamilyName(), account.getEmail(), account.getId());
         return collectionReference.document(id).set(userData);
     }

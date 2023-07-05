@@ -16,6 +16,13 @@ public class CartDao {
         return collectionReference.document(id);
     }
 
+    public Task<Void> createUserCart(String id) {
+        List<String> list = new ArrayList<>();
+        HashMap<String, Object> hashMap = new HashMap<>();
+        hashMap.put("listItems", list);
+        return collectionReference.document(id).set(hashMap);
+    }
+
     public Task<Void> clearCart(String id) {
         List<String> list = new ArrayList<>();
         HashMap<String, Object> hashMap = new HashMap<>();
